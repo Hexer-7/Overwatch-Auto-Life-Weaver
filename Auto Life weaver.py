@@ -208,6 +208,7 @@ def filter_color(image,mask_width,mask_high):
 
     _, image_mask = cv2.threshold(image_mask, 0, 250, cv2.THRESH_BINARY)
     image = cv2.bitwise_and(image, image, mask=image_mask)
+
     return image
 
 
@@ -294,7 +295,7 @@ if __name__ == "__main__":
         print(f'    Now you can Run Auto Life weaver by Holding "Mouse left click"')
         print(f'    and you can toggle pause Auto Life weaver with "{pause_toggle_button}"\n')
         print_state()
-        capture_screen(f'data/{selected_resolution}/70.png')
+        capture_screen(f'data/{selected_resolution}/counter.png')
     else:
         print("Error: Resources not found!")
 
