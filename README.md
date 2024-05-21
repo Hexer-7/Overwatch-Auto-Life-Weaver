@@ -1,1 +1,1 @@
-This code is similar of Mercy AI
+see 'About' i'm too lazy to write description for this project
